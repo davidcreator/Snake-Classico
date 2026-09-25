@@ -1,130 +1,110 @@
-# 🐍 Snake Game - Projeto Educacional
-## 📋 Sobre o Projeto
-O Snake Game é um projeto educacional perfeito para estudantes que estão começando no desenvolvimento de jogos. Este clássico jogo de arcade ensina conceitos fundamentais de programação de forma prática e divertida.
+# 🐍 Snake Clássico PRO — Projeto Didático & Arquitetura Comercial 2D
 
-## 🎯 Objetivos de Aprendizagem
-Entender lógica de programação através de um projeto prático
-Aprender conceitos de detecção de colisão
-Implementar sistemas de pontuação e crescimento
-Gerenciar estados do jogo (início, jogando, game over)
-Trabalhar com movimentação e controles
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Phaser 3](https://img.shields.io/badge/Phaser-3.80-FF0000?logo=phaser&logoColor=white)](https://phaser.io)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 🎮 Como Jogar
-Regras Básicas
-Controle a cobra usando as setas do teclado
-Colete a comida para fazer a cobra crescer
-Evite colisões com as paredes e o próprio corpo
-Tente conseguir a maior pontuação possível!
+Bem-vindo ao **Snake Clássico PRO**! Este repositório é uma solução completa desenvolvida para transformar um projeto educacional de jogo da cobrinha em uma **plataforma comercial de jogos 2D completa**, combinando uma versão **Vanilla JS totalmente corrigida** e uma versão em **React 18 + Phaser 3**.
 
-# Controles
-## ↑ Seta para cima - Move para cima
-## ↓ Seta para baixo - Move para baixo
-## ← Seta para esquerda - Move para esquerda
-## → Seta para direita - Move para direita
+---
 
-# 🏛️ História do Jogo
-O conceito do Snake tem uma rica história:
+## 🌟 O que há de novo nesta versão?
 
-**1976:** Criado como "Blockade" pela Gremlin Interactive
-**1997:** Popularizado mundialmente nos celulares Nokia
-**Hoje:** Usado como projeto educacional em programação
+1. **🛠️ 100% Livre de Bugs**: Todos os problemas de física, colisão, pontuação e loop de jogo do projeto original foram auditados e corrigidos.
+2. **🎮 6 Modos de Jogo**: Clássico, Velocidade, Obstáculos, Portal, Sobrevivência e Arco-íris.
+3. **🕹️ Suporte Multi-Controle**: Teclado (WASD/Setas), Gamepad/Controle USB e **D-Pad Virtual Touch** para celulares e tablets.
+4. **🔊 Áudio Procedural (Web Audio API)**: Sintetizador chiptune integrado sem dependência de arquivos de áudio externos.
+5. **⚡ Nova Arquitetura em React + Phaser 3**: Separação clara entre a UI reativa e a engine de jogos 2D através de um barramento de eventos (`EventBus`).
+6. **🏆 Sistema de Recordes Persistente**: Salvamento automático de High Scores com efeitos de confete (`canvas-confetti`).
 
-# 🛠️ Conceitos de Programação Aplicados
-## Conceitos Fundamentais
-**Arrays/Listas:** Para armazenar as posições do corpo da cobra
-**Loops:** Para o movimento contínuo do jogo
-**Condicionais:** Para detectar colisões e mudanças de direção
-**Funções:** Para organizar o código em partes reutilizáveis
+---
 
-## Sistemas do Jogo
-**Sistema de Movimento:** Como fazer a cobra se mover continuamente
-**Detecção de Colisão:** Verificar colisões com paredes e corpo
-**Sistema de Pontuação:** Incrementar pontos ao coletar comida
-**Geração de Comida:** Posicionar comida aleatoriamente no campo
-**Estados do Jogo:** Gerenciar início, jogo ativo e game over
+## 📚 Documentação Técnica (Pasta `docs/`)
 
-# 📚 Estrutura do Código
+Para detalhes arquiteturais avançados e guias do desenvolvedor, consulte a documentação dedicada na pasta [`docs/`](./docs/):
 
-    snake-game/
-    │
-    ├── index.html          # Estrutura da página
-    ├── css                 # Estilos visuais
-        └── styles.css      # Estilos visuais
-    ├── js                  # Lógica do jogo
-        └── script.js       # Lógica principal do jogo
-    └── README.md           # Este arquivo
+* 🏗️ [**docs/ARCHITECTURE.md**](./docs/ARCHITECTURE.md) — Design do sistema, integração React-Phaser via EventBus e ciclo de vida.
+* 🎮 [**docs/GAME_MODES_AND_MECHANICS.md**](./docs/GAME_MODES_AND_MECHANICS.md) — Matemática de pontuação, regras dos 6 modos de jogo e spawner seguro.
+* 🛠️ [**docs/CONTRIBUTING_AND_SETUP.md**](./docs/CONTRIBUTING_AND_SETUP.md) — Guia de instalação, comandos e boas práticas para desenvolvedores.
+* 🕵️ [**docs/AUDIT_AND_BUGFIXES.md**](./docs/AUDIT_AND_BUGFIXES.md) — Diagnóstico completo dos 7 bugs corrigidos no projeto legado.
 
-# 🚀 Começando a Desenvolver
-## Pré-requisitos
-Conhecimento básico de HTML, CSS e JavaScript
-Editor de código (VS Code, Sublime Text, etc.)
-Navegador web moderno
+---
 
-## Passos Iniciais
-Clone ou baixe este repositório
-Abra o arquivo index.html no navegador
-Estude o código começando pelo arquivo JavaScript
-Experimente modificar valores para ver o que acontece
+## 🎮 Os 6 Modos de Jogo
 
-# 🎯 Desafios Propostos
-## Nível Iniciante
- Mude a velocidade da cobra
- Altere as cores do jogo
- Modifique o tamanho do campo de jogo
-## Nível Intermediário
- Adicione um sistema de níveis
- Implemente power-ups especiais
- Crie diferentes tipos de comida
-## Nível Avançado
- Adicione obstáculos no campo
- Implemente modo multiplayer
- Crie um menu inicial e tela de game over
+| Modo | Ícone | Descrição das Mecânicas |
+| :--- | :---: | :--- |
+| **Clássico** | 🎯 | O tradicional jogo da cobra com velocidade constante e paredes fatais. |
+| **Velocidade** | ⚡ | Aceleração progressiva a cada nível atingido. |
+| **Obstáculos** | 🧱 | Blocos de rocha intransponíveis surgem no mapa de forma não-bloqueante. |
+| **Portal** | 🌀 | A cobra atravessa as bordas do mapa e reaparece do lado oposto. |
+| **Sobrevivência** | 💀 | Comida estragada surge no mapa. Ao comer, a cobra encolhe e perde pontos. |
+| **Arco-íris** | 🌈 | Comidas coloridas concedem pontuações bônus variadas (de +10 a +40 pontos). |
 
-# 🔧 Tecnologias Utilizadas
-## HTML5
-Estrutura da página e canvas
-## CSS3
-Estilização e layout
-## JavaScript
-Lógica do jogo e interatividade
+---
 
-# 📖 Recursos de Aprendizagem
-## Documentação Útil
-MDN Web Docs - Canvas API
-MDN Web Docs - JavaScript
+## 🚀 Como Executar o Projeto
 
-## Tutoriais Recomendados
-Como usar o elemento Canvas HTML5
-Fundamentos de Game Loops em JavaScript
-Detecção de colisão em jogos 2D
+### 1. Versão Didática Corrigida (Vanilla JS)
+Abra diretamente o arquivo `Snake Classico/index.html` em qualquer navegador moderno. Não requer Node.js nem compilação.
 
-# 🤝 Como Contribuir
-Este é um projeto educacional! Você pode:
+---
 
-Fazer fork do repositório
-Criar uma nova branch para sua feature
-Implementar melhorias ou correções
-Enviar um pull request
+### 2. Versão Profissional (React + Phaser 3)
+Entre na pasta `snake-react-phaser` para executar a versão moderna:
 
-# 📝 Exercícios Práticos
-## Exercício 1: Personalizando o Visual
-Mude a cor da cobra para sua cor favorita
-Altere o formato da comida (quadrado para círculo)
-Adicione um fundo personalizado
+```bash
+# Entrar na pasta do projeto React + Phaser 3
+cd snake-react-phaser
 
-## Exercício 2: Modificando a Jogabilidade
-Implemente bordas que "transportam" a cobra para o lado oposto
-Adicione uma comida especial que vale mais pontos
-Crie um modo onde a cobra diminui se não comer por um tempo
+# Instalar as dependências
+npm install
 
-## Exercício 3: Melhorando a Interface
-Adicione um contador de pontuação visível
-Implemente um timer de jogo
-Crie uma tela de "Game Over" com opção de reiniciar
+# Iniciar o servidor de desenvolvimento
+npm run dev
+```
 
-# 🏆 Conclusão
-O desenvolvimento do Snake Game é uma jornada de aprendizado completa que abrange desde conceitos básicos de programação até técnicas avançadas de desenvolvimento de jogos. Cada linha de código é uma oportunidade de aprender algo novo!
+Acesse no navegador: `http://localhost:5173`.
 
-**Lembre-se:** *O mais importante não é fazer o código perfeito de primeira, mas entender cada conceito e experimentar diferentes abordagens.*
+---
 
-**Bons estudos e divirta-se programando! 🚀**
+## 🏛️ Estrutura do Repositório
+
+```
+Snake-Classico/
+├── Snake Classico/                 # Versão Didática Vanilla JS (100% Corrigida)
+│   ├── index.html
+│   ├── css/styles.css
+│   └── js/script.js
+│
+├── snake-react-phaser/             # Versão de Produção Comercial (React + Phaser 3)
+│   ├── src/
+│   │   ├── components/             # Interface React (HUD, Menu, Game Over, Touch)
+│   │   ├── game/                   # Engine Phaser 3 (GameScene, EventBus, SoundEngine)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+└── docs/                           # Documentação Completa do Projeto
+    ├── ARCHITECTURE.md
+    ├── GAME_MODES_AND_MECHANICS.md
+    ├── CONTRIBUTING_AND_SETUP.md
+    └── AUDIT_AND_BUGFIXES.md
+```
+
+---
+
+## 🤝 Como Contribuir
+
+Fique à vontade para abrir *Issues* ou enviar *Pull Requests*! Consulte nosso [Guia de Contribuição](./docs/CONTRIBUTING_AND_SETUP.md) antes de enviar suas alterações.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+
+**Desenvolvido com 💚 pela House Software Studio!**
