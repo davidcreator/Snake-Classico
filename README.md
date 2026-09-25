@@ -107,4 +107,4 @@ Fique à vontade para abrir *Issues* ou enviar *Pull Requests*! Consulte nosso [
 
 Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
 
-**Desenvolvido com 💚 pela House Software Studio!**
+**Desenvolvido com 💚 por David Creator!**
